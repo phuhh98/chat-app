@@ -4,7 +4,7 @@
 	"description": "chat-application udemy practice",
 	"main": "src/index.js",
 	"scripts": {
-		"dev": "ENV=dev nodemon src/index.js -e js,pug,env",
+		"dev": "ENV=dev nodemon src/index.js -e js,env",
 		"test": "ENV=test jest --watch --detectOpenHandles --runInBand",
 		"start": "node src/index.js"
 	},
@@ -16,7 +16,9 @@
 	"author": "Hoai Phu",
 	"license": "ISC",
 	"dependencies": {
-		"express": "^4.17.1"
+		"bad-words": "^3.0.4",
+		"express": "^4.17.1",
+		"socket.io": "^4.2.0"
 	},
 	"devDependencies": {
 		"jest": "^27.2.0",
